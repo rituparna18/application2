@@ -1,63 +1,16 @@
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-h2 {
-    margin-top: 20px;
-}
-
-.import-section {
-    margin-bottom: 20px;
-}
-
-.display-options {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.display-options select {
-    width: 200px;
-    height: 150px;
-    margin: 0 10px;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-button {
-    margin: 5px;
-    padding: 5px 10px;
-}
-
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+  border-collapse: collapse;
+  width: 100%;
 }
-
-table th, table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
-
-table th {
-    background-color: #f2f2f2;
+th {
+  background-color: #f2f2f2;
 }
-
-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-table tbody tr:hover {
-    background-color: #e0e0e0;
+button {
+  background-color: #5cb75b;
 }
