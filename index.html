@@ -1,32 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Display</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Import Products</h2>
-        <div class="import-section">
-            <input type="file" id="fileInput">
-            <button onclick="importProducts()">Import</button>
-        </div>
-        <h2>Display Handling Options</h2>
-        <div class="display-options">
-            <select multiple id="selectedFields">
-                
-       </select>
-            <!-- </select> -->
-            <div class="button-container">
-                <button onclick="moveOptions('availableFields', 'selectedFields')">>></button>
-                <button onclick="moveOptions('selectedFields', 'availableFields')">&lt;&lt;</button>
-            </div>
-            <select multiple id="selectedFields"></select>
-        <!-- </select> -->
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV/JSON Table Viewer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <input type="file" id="fileInput" accept=".csv, .json" />
+    <button id="submitBtn">Submit</button>
+    <div id="columnSelector" style="display: none">
+      <h2>Select columns to display:</h2>
+      <select id="columnSelect" multiple></select>
+      <button id="columnSubmitBtn">Submit Columns</button>
     </div>
+    <div id="tableContainer"></div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
